@@ -9,7 +9,7 @@ def get_template()
     <plist version="1.0">
     <array>
     <% for @item in @items %>
-      <dict>
+  <dict>
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
@@ -61,7 +61,7 @@ class EmojiList
   end
 
   def render()
-    ERB.new(@template).result(binding)
+    ERB.new(@template, 0, '>').result(binding)
   end
 
   def save(file)
