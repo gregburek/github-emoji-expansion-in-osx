@@ -30,6 +30,7 @@ def get_items()
   rows = db.execute('SELECT * FROM emoji ORDER BY code ASC');
 
   missing = []
+  too_complex = []
   emoji = []
 
   rows.each do |row|
@@ -39,14 +40,30 @@ def get_items()
     unicode = row[2]
 
     if unicode.nil?
-      puts "*** Emoji present in Github but not in unicode: #{code}"
+      missing << code
     elsif unicode.length <= 5
       emoji << {'code' => code, 'unicode' => unicode}
+    elsif unicode.length == 9
+      # parts = unicode.split(' ')
+      too_complex << {'code' => code, 'unicode' => unicode}
+    elsif unicode.length == 11
+      # parts = unicode.split(' ')
+      too_complex << {'code' => code, 'unicode' => unicode}
+    elsif unicode.length == 19
+      # parts = unicode.split(' ')
+      too_complex << {'code' => code, 'unicode' => unicode}
     else
-      puts "*** Unhandled unicode: #{code} - #{unicode}"
+      puts "** Unhandled unicode: #{unicode}"
+      exit()
     end
 
   end
+
+  puts "** Emoji present in Github but not in unicode:"
+  missing.each {|code| puts " * #{code}"}
+
+  puts "** Unicode not currently supported by this script: "
+  too_complex.each {|emoji| puts " * #{emoji['code']} - #{emoji['unicode']}"}
 
   return emoji
 end
