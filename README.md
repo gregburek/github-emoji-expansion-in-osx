@@ -34,6 +34,7 @@ defaults write -g WebAutomaticTextReplacementEnabled -bool true
 Develop
 -------
 The generation script has been tested on Ruby versions 1.9.2-p290 and 1.9.3-p327 and I recommend developing the project in a similar environment as unicode support in 1.8 is not best.
+Install dependencies locally by running `bundle install`. To regenerate the `NSUserReplacementItems.plist` file, run `bundle exec ruby generate_plist.rb`
 
 Todo
 ----
@@ -64,5 +65,5 @@ Todo
 
 Credits
 -------
-- `emoji.sqlite` is from the [ZWEmoji](https://github.com/zachwaugh/ZWEmoji) project and was the only direct github emoji code to unicode map that I could find.
+- `emoji.sqlite` is from the [ZWEmoji](https://github.com/zachwaugh/ZWEmoji) project and was the only direct github emoji code to unicode map that I could easily find.
 - [Ben Alman](https://github.com/cowboy)'s [dotfiles](https://github.com/cowboy/dotfiles) repo provided significant inspiration for how to [merge](https://github.com/cowboy/dotfiles/blob/master/source/50_osx.sh) in the generated [NSReplacement.plist](https://github.com/cowboy/dotfiles/blob/master/conf/osx/NSUserReplacementItems.plist) file.
