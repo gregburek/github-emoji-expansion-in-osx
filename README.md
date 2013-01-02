@@ -1,4 +1,4 @@
-Github emoji expansion in OSX
+Github emoji expansion in OS X
 =============================
 Add github emoji codes to OS X's symbol and text substitution.
 
@@ -37,8 +37,7 @@ The generation script has been tested on Ruby versions 1.9.2-p290 and 1.9.3-p327
 
 Todo
 ----
-- Some of the more complex emoji are not included in this plist and ignored by the generation script, including emoji that rely on multi-part unicode like [Regional Indicator Symbols](http://en.wikipedia.org/wiki/Regional_Indicator_Symbol). Supporting them would require a minor refactor. 
-```bash
+- Emoji listed below are not included in this plist and ignored by the generation script. As they rely on multi-part unicode like [Regional Indicator Symbols](http://en.wikipedia.org/wiki/Regional_Indicator_Symbol), supporting them would require a minor refactor. 
  * :0: - 0030 20E3
  * :1: - 0031 20E3
  * :2: - 0032 20E3
@@ -61,10 +60,9 @@ Todo
  * :ru: - 1F1F7 1F1FA
  * :uk: - D83C DDEC D83C DDE7
  * :us: - 1F1FA 1F1F8
-```
 - Find a way to use the official [gemoji](https://github.com/github/gemoji) gem for emoji->unicode generation
 
 Credits
 -------
 - `emoji.sqlite` is from the [ZWEmoji](https://github.com/zachwaugh/ZWEmoji) project and was the only direct github emoji code to unicode map that I could find.
-- [Ben Alman](https://github.com/cowboy)'s [dotfiles](https://github.com/cowboy/dotfiles) repo provided significant guidance for merging in the [NSReplacement.plist](https://github.com/cowboy/dotfiles/blob/master/conf/osx/NSUserReplacementItems.plist) file.
+- [Ben Alman](https://github.com/cowboy)'s [dotfiles](https://github.com/cowboy/dotfiles) repo provided significant inspiration for how to [merge](https://github.com/cowboy/dotfiles/blob/master/source/50_osx.sh) in the generated [NSReplacement.plist](https://github.com/cowboy/dotfiles/blob/master/conf/osx/NSUserReplacementItems.plist) file.
