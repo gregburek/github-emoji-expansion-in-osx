@@ -1,8 +1,8 @@
 Github emoji expansion in OSX
 =============================
-Add github emoji codes to OS X's symbol and text substitution. 
+Add github emoji codes to OS X's symbol and text substitution.
 
-This project contains a plist that is suitable to import into OS X's text substitution settings and the code used to generate it. 
+This project contains a plist that is suitable to import into OS X's text substitution pref pane and the code used to generate it.
 
 Install
 -------
@@ -26,20 +26,45 @@ curl -O https://raw.github.com/gregburek/github-emoji-expansion-in-osx/master/NS
 ```bash
 /usr/libexec/PlistBuddy -c "Merge '`pwd`/backup.plist' NSUserReplacementItems" ~/Library/Preferences/.GlobalPreferences.plist
 ```
-5. (Only for OS X 10.6 and earlier) Enable text replacement in all apps by default:
+5. (optional) Enable text replacement in all apps by default:
 ```bash
 defaults write -g WebAutomaticTextReplacementEnabled -bool true
 ```
 
 Develop
 -------
-
+The generation script has been tested on Ruby versions 1.9.2-p290 and 1.9.3-p327 and I recommend developing the project in a similar environment as unicode support in 1.8 is not best.
 
 Todo
 ----
 - Some of the more complex emoji are not included in this plist and ignored by the generation script, including emoji that rely on multi-part unicode like [Regional Indicator Symbols](http://en.wikipedia.org/wiki/Regional_Indicator_Symbol). Supporting them would require a minor refactor. 
+```bash
+ * :0: - 0030 20E3
+ * :1: - 0031 20E3
+ * :2: - 0032 20E3
+ * :3: - 0033 20E3
+ * :4: - 0034 20E3
+ * :5: - 0035 20E3
+ * :6: - 0036 20E3
+ * :7: - 0037 20E3
+ * :8: - 0038 20E3
+ * :9: - 0039 20E3
+ * :cn: - 1F1E8 1F1F3
+ * :de: - 1F1E9 1F1EA
+ * :es: - 1F1EA 1F1F8
+ * :fr: - 1F1EB 1F1F7
+ * :gb: - 1F1EC 1F1E7
+ * :hash: - 0023 20E3
+ * :it: - 1F1EE 1F1F9
+ * :jp: - 1F1EF 1F1F5
+ * :kr: - 1F1F0 1F1F7
+ * :ru: - 1F1F7 1F1FA
+ * :uk: - D83C DDEC D83C DDE7
+ * :us: - 1F1FA 1F1F8
+```
 - Find a way to use the official [gemoji](https://github.com/github/gemoji) gem for emoji->unicode generation
 
 Credits
 -------
- - `emoji.sqlite` is from the [ZWEmoji](https://github.com/zachwaugh/ZWEmoji) project and was the only direct github emoji code to unicode map that I could find. 
+- `emoji.sqlite` is from the [ZWEmoji](https://github.com/zachwaugh/ZWEmoji) project and was the only direct github emoji code to unicode map that I could find.
+- [Ben Alman](https://github.com/cowboy)'s [dotfiles](https://github.com/cowboy/dotfiles) repo provided significant guidance for merging in the [NSReplacement.plist](https://github.com/cowboy/dotfiles/blob/master/conf/osx/NSUserReplacementItems.plist) file.
