@@ -1,6 +1,6 @@
-Github emoji expansion in OS X
+GitHub emoji expansion in OS X
 =============================
-Add github emoji codes to OS X's symbol and text substitution.
+Add GitHub emoji codes to OS X's symbol and text substitution.
 
 This project contains a plist that is suitable to import into OS X's text substitution pref pane and the code used to generate it.
 
@@ -17,7 +17,7 @@ Install
   - Click the "Restore Defaults" button
   - Make sure "Use symbol and text substitution" is checked 
 
-3. Download and install the Github emoji expansion plist
+3. Download and install the GitHub emoji expansion plist
 ```bash
 curl -O https://raw.github.com/gregburek/github-emoji-expansion-in-osx/master/NSUserReplacementItems.plist
 /usr/libexec/PlistBuddy -c "Merge '`pwd`/NSUserReplacementItems.plist' NSUserReplacementItems" ~/Library/Preferences/.GlobalPreferences.plist
@@ -65,5 +65,5 @@ Todo
 
 Credits
 -------
-- `emoji.sqlite` is from the [ZWEmoji](https://github.com/zachwaugh/ZWEmoji) project and was the only direct github emoji code to unicode map that I could easily find.
+- `emoji.sqlite` is from the [ZWEmoji](https://github.com/zachwaugh/ZWEmoji) project and was the only direct GitHub emoji code to unicode map that I could easily find.
 - [Ben Alman](https://github.com/cowboy)'s [dotfiles](https://github.com/cowboy/dotfiles) repo provided significant inspiration for how to [merge](https://github.com/cowboy/dotfiles/blob/master/source/50_osx.sh) in the generated [NSReplacement.plist](https://github.com/cowboy/dotfiles/blob/master/conf/osx/NSUserReplacementItems.plist) file.
