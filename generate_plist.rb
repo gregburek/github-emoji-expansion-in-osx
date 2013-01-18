@@ -1,6 +1,6 @@
 require 'erb'
 require 'rubygems'
-require 'sqlite3'
+require 'gemoji'
 
 def get_template()
   %{
@@ -24,25 +24,25 @@ def get_template()
 end
 
 def get_items()
-  dir = File.dirname(__FILE__)
-  db = SQLite3::Database.new(dir + '/emoji.sqlite')
-
-  rows = db.execute('SELECT * FROM emoji ORDER BY code ASC');
 
   missing = []
   too_complex = []
-  emoji = []
+  emoji_pairs = []
 
-  rows.each do |row|
-    raw_code = row[0].chomp
-
-    code = ":#{raw_code}:"
-    unicode = row[2]
+  Emoji.names.each do |emoji|
+    code = ":#{emoji}:"
+    begin
+      unicode_filename = File.readlink("#{Emoji.images_path}/emoji/#{emoji}.png")
+    rescue
+      missing << code
+      next
+    end
+    unicode = unicode_filename.split("/")[1].split(".")[0]
 
     if unicode.nil?
-      missing << code
+      puts "ERROR"
     elsif unicode.length <= 5
-      emoji << {'code' => code, 'unicode' => unicode}
+      emoji_pairs << {'code' => code, 'unicode' => unicode}
     elsif unicode.length == 9
       # parts = unicode.split(' ')
       too_complex << {'code' => code, 'unicode' => unicode}
@@ -56,7 +56,6 @@ def get_items()
       puts "** Unhandled unicode: #{unicode}"
       exit()
     end
-
   end
 
   puts "** Emoji present in Github but not in unicode:"
@@ -65,7 +64,7 @@ def get_items()
   puts "** Unicode not currently supported by this script: "
   too_complex.each {|emoji| puts " * #{emoji['code']} - #{emoji['unicode']}"}
 
-  return emoji
+  return emoji_pairs
 end
 
 class EmojiList

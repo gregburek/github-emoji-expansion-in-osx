@@ -159,6 +159,14 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
+        <string>:anguished:</string>
+        <key>with</key>
+        <string>😧</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
         <string>:ant:</string>
         <key>with</key>
         <string>🐜</string>
@@ -375,6 +383,14 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
+        <string>:athletic_shoe:</string>
+        <key>with</key>
+        <string>👟</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
         <string>:atm:</string>
         <key>with</key>
         <string>🏧</string>
@@ -418,6 +434,14 @@
         <string>:baby_symbol:</string>
         <key>with</key>
         <string>🚼</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:back:</string>
+        <key>with</key>
+        <string>🔙</string>
       </dict>
       <dict>
         <key>on</key>
@@ -543,6 +567,14 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
+        <string>:bee:</string>
+        <key>with</key>
+        <string>🐝</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
         <string>:beer:</string>
         <key>with</key>
         <string>🍺</string>
@@ -647,6 +679,30 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
+        <string>:black_large_square:</string>
+        <key>with</key>
+        <string>⬛</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:black_medium_small_square:</string>
+        <key>with</key>
+        <string>◾</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:black_medium_square:</string>
+        <key>with</key>
+        <string>◼</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
         <string>:black_nib:</string>
         <key>with</key>
         <string>✒</string>
@@ -655,9 +711,17 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
-        <string>:black_square:</string>
+        <string>:black_small_square:</string>
         <key>with</key>
-        <string>◼</string>
+        <string>▪</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:black_square_button:</string>
+        <key>with</key>
+        <string>🔲</string>
       </dict>
       <dict>
         <key>on</key>
@@ -1495,6 +1559,14 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
+        <string>:confused:</string>
+        <key>with</key>
+        <string>😕</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
         <string>:congratulations:</string>
         <key>with</key>
         <string>㊗</string>
@@ -1610,6 +1682,14 @@
         <string>:credit_card:</string>
         <key>with</key>
         <string>💳</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:crescent_moon:</string>
+        <key>with</key>
+        <string>🌙</string>
       </dict>
       <dict>
         <key>on</key>
@@ -1807,6 +1887,14 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
+        <string>:disappointed_relieved:</string>
+        <key>with</key>
+        <string>😥</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
         <string>:dizzy:</string>
         <key>with</key>
         <string>💫</string>
@@ -1999,6 +2087,14 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
+        <string>:eight:</string>
+        <key>with</key>
+        <string>8</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
         <string>:eight_pointed_black_star:</string>
         <key>with</key>
         <string>✴</string>
@@ -2033,7 +2129,7 @@
         <key>replace</key>
         <string>:email:</string>
         <key>with</key>
-        <string>📩</string>
+        <string>✉</string>
       </dict>
       <dict>
         <key>on</key>
@@ -2050,6 +2146,14 @@
         <string>:envelope:</string>
         <key>with</key>
         <string>✉</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:envelope_with_arrow:</string>
+        <key>with</key>
+        <string>📩</string>
       </dict>
       <dict>
         <key>on</key>
@@ -2089,7 +2193,15 @@
         <key>replace</key>
         <string>:exclamation:</string>
         <key>with</key>
-        <string>❕</string>
+        <string>❗</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:expressionless:</string>
+        <key>with</key>
+        <string>😑</string>
       </dict>
       <dict>
         <key>on</key>
@@ -2169,7 +2281,7 @@
         <key>replace</key>
         <string>:feet:</string>
         <key>with</key>
-        <string>👣</string>
+        <string>🐾</string>
       </dict>
       <dict>
         <key>on</key>
@@ -2263,6 +2375,14 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
+        <string>:five:</string>
+        <key>with</key>
+        <string>5</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
         <string>:flags:</string>
         <key>with</key>
         <string>🎏</string>
@@ -2319,6 +2439,14 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
+        <string>:footprints:</string>
+        <key>with</key>
+        <string>👣</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
         <string>:fork_and_knife:</string>
         <key>with</key>
         <string>🍴</string>
@@ -2330,6 +2458,14 @@
         <string>:fountain:</string>
         <key>with</key>
         <string>⛲</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:four:</string>
+        <key>with</key>
+        <string>4</string>
       </dict>
       <dict>
         <key>on</key>
@@ -2370,6 +2506,14 @@
         <string>:frog:</string>
         <key>with</key>
         <string>🐸</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:frowning:</string>
+        <key>with</key>
+        <string>😦</string>
       </dict>
       <dict>
         <key>on</key>
@@ -2527,9 +2671,25 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
+        <string>:grimacing:</string>
+        <key>with</key>
+        <string>😬</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
         <string>:grin:</string>
         <key>with</key>
         <string>😁</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:grinning:</string>
+        <key>with</key>
+        <string>😀</string>
       </dict>
       <dict>
         <key>on</key>
@@ -2610,6 +2770,14 @@
         <string>:hankey:</string>
         <key>with</key>
         <string>💩</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:hash:</string>
+        <key>with</key>
+        <string>#</string>
       </dict>
       <dict>
         <key>on</key>
@@ -2865,6 +3033,14 @@
         <key>replace</key>
         <string>:hourglass:</string>
         <key>with</key>
+        <string>⌛</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:hourglass_flowing_sand:</string>
+        <key>with</key>
         <string>⏳</string>
       </dict>
       <dict>
@@ -2874,6 +3050,22 @@
         <string>:house:</string>
         <key>with</key>
         <string>🏠</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:house_with_garden:</string>
+        <key>with</key>
+        <string>🏡</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:hushed:</string>
+        <key>with</key>
+        <string>😯</string>
       </dict>
       <dict>
         <key>on</key>
@@ -3079,6 +3271,14 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
+        <string>:kissing:</string>
+        <key>with</key>
+        <string>😗</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
         <string>:kissing_cat:</string>
         <key>with</key>
         <string>😽</string>
@@ -3087,7 +3287,7 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
-        <string>:kissing_face:</string>
+        <string>:kissing_closed_eyes:</string>
         <key>with</key>
         <string>😚</string>
       </dict>
@@ -3098,6 +3298,14 @@
         <string>:kissing_heart:</string>
         <key>with</key>
         <string>😘</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:kissing_smiling_eyes:</string>
+        <key>with</key>
+        <string>😙</string>
       </dict>
       <dict>
         <key>on</key>
@@ -3114,6 +3322,14 @@
         <string>:koko:</string>
         <key>with</key>
         <string>🈁</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:lantern:</string>
+        <key>with</key>
+        <string>🏮</string>
       </dict>
       <dict>
         <key>on</key>
@@ -3593,7 +3809,7 @@
         <key>replace</key>
         <string>:moon:</string>
         <key>with</key>
-        <string>🌙</string>
+        <string>🌔</string>
       </dict>
       <dict>
         <key>on</key>
@@ -3794,6 +4010,14 @@
         <string>:ng:</string>
         <key>with</key>
         <string>🆖</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:nine:</string>
+        <key>with</key>
+        <string>9</string>
       </dict>
       <dict>
         <key>on</key>
@@ -4047,6 +4271,22 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
+        <string>:one:</string>
+        <key>with</key>
+        <string>1</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:open_book:</string>
+        <key>with</key>
+        <string>📖</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
         <string>:open_file_folder:</string>
         <key>with</key>
         <string>📂</string>
@@ -4058,6 +4298,14 @@
         <string>:open_hands:</string>
         <key>with</key>
         <string>👐</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:open_mouth:</string>
+        <key>with</key>
+        <string>😮</string>
       </dict>
       <dict>
         <key>on</key>
@@ -4090,6 +4338,14 @@
         <string>:ox:</string>
         <key>with</key>
         <string>🐂</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:package:</string>
+        <key>with</key>
+        <string>📦</string>
       </dict>
       <dict>
         <key>on</key>
@@ -4521,7 +4777,7 @@
         <key>replace</key>
         <string>:question:</string>
         <key>with</key>
-        <string>❔</string>
+        <string>❓</string>
       </dict>
       <dict>
         <key>on</key>
@@ -4593,7 +4849,7 @@
         <key>replace</key>
         <string>:raised_hand:</string>
         <key>with</key>
-        <string>🙋</string>
+        <string>✋</string>
       </dict>
       <dict>
         <key>on</key>
@@ -4602,6 +4858,14 @@
         <string>:raised_hands:</string>
         <key>with</key>
         <string>🙌</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:raising_hand:</string>
+        <key>with</key>
+        <string>🙋</string>
       </dict>
       <dict>
         <key>on</key>
@@ -4673,7 +4937,7 @@
         <key>replace</key>
         <string>:relieved:</string>
         <key>with</key>
-        <string>😥</string>
+        <string>😌</string>
       </dict>
       <dict>
         <key>on</key>
@@ -4913,7 +5177,7 @@
         <key>replace</key>
         <string>:satisfied:</string>
         <key>with</key>
-        <string>😌</string>
+        <string>😆</string>
       </dict>
       <dict>
         <key>on</key>
@@ -5015,6 +5279,14 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
+        <string>:seven:</string>
+        <key>with</key>
+        <string>7</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
         <string>:shaved_ice:</string>
         <key>with</key>
         <string>🍧</string>
@@ -5065,7 +5337,7 @@
         <key>replace</key>
         <string>:shoe:</string>
         <key>with</key>
-        <string>👟</string>
+        <string>👞</string>
       </dict>
       <dict>
         <key>on</key>
@@ -5082,6 +5354,14 @@
         <string>:signal_strength:</string>
         <key>with</key>
         <string>📶</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:six:</string>
+        <key>with</key>
+        <string>6</string>
       </dict>
       <dict>
         <key>on</key>
@@ -5106,6 +5386,14 @@
         <string>:skull:</string>
         <key>with</key>
         <string>💀</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:sleeping:</string>
+        <key>with</key>
+        <string>😴</string>
       </dict>
       <dict>
         <key>on</key>
@@ -5327,6 +5615,14 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
+        <string>:sparkle:</string>
+        <key>with</key>
+        <string>❇</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
         <string>:sparkler:</string>
         <key>with</key>
         <string>🎇</string>
@@ -5338,6 +5634,14 @@
         <string>:sparkles:</string>
         <key>with</key>
         <string>✨</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:sparkling_heart:</string>
+        <key>with</key>
+        <string>💖</string>
       </dict>
       <dict>
         <key>on</key>
@@ -5377,7 +5681,7 @@
         <key>replace</key>
         <string>:star:</string>
         <key>with</key>
-        <string>🌟</string>
+        <string>⭐</string>
       </dict>
       <dict>
         <key>on</key>
@@ -5442,6 +5746,30 @@
         <string>:strawberry:</string>
         <key>with</key>
         <string>🍓</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:stuck_out_tongue:</string>
+        <key>with</key>
+        <string>😛</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:stuck_out_tongue_closed_eyes:</string>
+        <key>with</key>
+        <string>😝</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:stuck_out_tongue_winking_eye:</string>
+        <key>with</key>
+        <string>😜</string>
       </dict>
       <dict>
         <key>on</key>
@@ -5671,6 +5999,14 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
+        <string>:three:</string>
+        <key>with</key>
+        <string>3</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
         <string>:thumbsdown:</string>
         <key>with</key>
         <string>👎</string>
@@ -5752,14 +6088,6 @@
         <integer>1</integer>
         <key>replace</key>
         <string>:tongue:</string>
-        <key>with</key>
-        <string>😝</string>
-      </dict>
-      <dict>
-        <key>on</key>
-        <integer>1</integer>
-        <key>replace</key>
-        <string>:tongue2:</string>
         <key>with</key>
         <string>👅</string>
       </dict>
@@ -5938,6 +6266,14 @@
         <string>:twisted_rightwards_arrows:</string>
         <key>with</key>
         <string>🔀</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:two:</string>
+        <key>with</key>
+        <string>2</string>
       </dict>
       <dict>
         <key>on</key>
@@ -6335,9 +6671,41 @@
         <key>on</key>
         <integer>1</integer>
         <key>replace</key>
-        <string>:white_square:</string>
+        <string>:white_large_square:</string>
         <key>with</key>
         <string>⬜</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:white_medium_small_square:</string>
+        <key>with</key>
+        <string>◽</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:white_medium_square:</string>
+        <key>with</key>
+        <string>◻</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:white_small_square:</string>
+        <key>with</key>
+        <string>▫</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:white_square_button:</string>
+        <key>with</key>
+        <string>🔳</string>
       </dict>
       <dict>
         <key>on</key>
@@ -6362,14 +6730,6 @@
         <string>:wink:</string>
         <key>with</key>
         <string>😉</string>
-      </dict>
-      <dict>
-        <key>on</key>
-        <integer>1</integer>
-        <key>replace</key>
-        <string>:wink2:</string>
-        <key>with</key>
-        <string>😜</string>
       </dict>
       <dict>
         <key>on</key>
@@ -6410,6 +6770,14 @@
         <string>:womens:</string>
         <key>with</key>
         <string>🚺</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:worried:</string>
+        <key>with</key>
+        <string>😟</string>
       </dict>
       <dict>
         <key>on</key>
@@ -6458,6 +6826,14 @@
         <string>:zap:</string>
         <key>with</key>
         <string>⚡</string>
+      </dict>
+      <dict>
+        <key>on</key>
+        <integer>1</integer>
+        <key>replace</key>
+        <string>:zero:</string>
+        <key>with</key>
+        <string>0</string>
       </dict>
       <dict>
         <key>on</key>
