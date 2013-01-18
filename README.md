@@ -36,10 +36,10 @@ Develop
 The generation script has been tested on Ruby versions 1.9.2-p290 and 1.9.3-p327 and I recommend developing the project in a similar environment as unicode support in 1.8 is not best.
 Install dependencies locally by running `bundle install`. To regenerate the `NSUserReplacementItems.plist` file, run `bundle exec ruby generate_plist.rb`
 
-Todo
+Caveats
 ----
-- Emoji listed below are not included in this plist and ignored by the generation script. As they rely on multi-part unicode like [Regional Indicator Symbols](http://en.wikipedia.org/wiki/Regional_Indicator_Symbol), supporting them would require a minor refactor. 
-** Emoji present in Github but not in unicode:
+- Emoji listed below are not included in this plist and ignored by the generation script. Some rely on multi-part unicode like [Regional Indicator Symbols](http://en.wikipedia.org/wiki/Regional_Indicator_Symbol), and supporting them would require a minor refactor. Others are just special :smile:
+- Emoji present in Github but not in unicode:
  * :bowtie:
  * :feelsgood:
  * :finnadie:
@@ -58,7 +58,7 @@ Todo
  * :squirrel:
  * :suspect:
  * :trollface:
-** Unicode not currently supported by this script: 
+ - Unicode not currently supported by this script: 
  * :cn: - 1f1e8-1f1f3
  * :de: - 1f1e9-1f1ea
  * :es: - 1f1ea-1f1f8
