@@ -40,36 +40,36 @@ Caveats
 ----
 - Emoji listed below are not included in this plist and ignored by the generation script. Some rely on multi-part unicode like [Regional Indicator Symbols](http://en.wikipedia.org/wiki/Regional_Indicator_Symbol), and supporting them would require a minor refactor. Others are just special :smile:
 - Emoji present in Github but not in unicode:
- * :bowtie:
- * :feelsgood:
- * :finnadie:
- * :fu:
- * :goberserk:
- * :godmode:
- * :hurtrealbad:
- * :metal:
- * :neckbeard:
- * :octocat:
- * :rage1:
- * :rage2:
- * :rage3:
- * :rage4:
- * :shipit:
- * :squirrel:
- * :suspect:
- * :trollface:
- - Unicode not currently supported by this script: 
- * :cn: - 1f1e8-1f1f3
- * :de: - 1f1e9-1f1ea
- * :es: - 1f1ea-1f1f8
- * :fr: - 1f1eb-1f1f7
- * :gb: - 1f1ec-1f1e7
- * :it: - 1f1ee-1f1f9
- * :jp: - 1f1ef-1f1f5
- * :kr: - 1f1f0-1f1f7
- * :ru: - 1f1f7-1f1fa
- * :uk: - 1f1ec-1f1e7
- * :us: - 1f1fa-1f1f8
+   * :bowtie:
+   * :feelsgood:
+   * :finnadie:
+   * :fu:
+   * :goberserk:
+   * :godmode:
+   * :hurtrealbad:
+   * :metal:
+   * :neckbeard:
+   * :octocat:
+   * :rage1:
+   * :rage2:
+   * :rage3:
+   * :rage4:
+   * :shipit:
+   * :squirrel:
+   * :suspect:
+   * :trollface:
+- Unicode not currently supported by this script: 
+   * :cn: - 1f1e8-1f1f3
+   * :de: - 1f1e9-1f1ea
+   * :es: - 1f1ea-1f1f8
+   * :fr: - 1f1eb-1f1f7
+   * :gb: - 1f1ec-1f1e7
+   * :it: - 1f1ee-1f1f9
+   * :jp: - 1f1ef-1f1f5
+   * :kr: - 1f1f0-1f1f7
+   * :ru: - 1f1f7-1f1fa
+   * :uk: - 1f1ec-1f1e7
+   * :us: - 1f1fa-1f1f8
 
 Credits
 -------
