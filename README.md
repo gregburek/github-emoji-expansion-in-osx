@@ -36,34 +36,41 @@ Develop
 The generation script has been tested on Ruby versions 1.9.2-p290 and 1.9.3-p327 and I recommend developing the project in a similar environment as unicode support in 1.8 is not best.
 Install dependencies locally by running `bundle install`. To regenerate the `NSUserReplacementItems.plist` file, run `bundle exec ruby generate_plist.rb`
 
-Todo
+Caveats
 ----
-- Emoji listed below are not included in this plist and ignored by the generation script. As they rely on multi-part unicode like [Regional Indicator Symbols](http://en.wikipedia.org/wiki/Regional_Indicator_Symbol), supporting them would require a minor refactor. 
- * :0: - 0030 20E3
- * :1: - 0031 20E3
- * :2: - 0032 20E3
- * :3: - 0033 20E3
- * :4: - 0034 20E3
- * :5: - 0035 20E3
- * :6: - 0036 20E3
- * :7: - 0037 20E3
- * :8: - 0038 20E3
- * :9: - 0039 20E3
- * :cn: - 1F1E8 1F1F3
- * :de: - 1F1E9 1F1EA
- * :es: - 1F1EA 1F1F8
- * :fr: - 1F1EB 1F1F7
- * :gb: - 1F1EC 1F1E7
- * :hash: - 0023 20E3
- * :it: - 1F1EE 1F1F9
- * :jp: - 1F1EF 1F1F5
- * :kr: - 1F1F0 1F1F7
- * :ru: - 1F1F7 1F1FA
- * :uk: - D83C DDEC D83C DDE7
- * :us: - 1F1FA 1F1F8
-- Find a way to use the official [gemoji](https://github.com/github/gemoji) gem for emoji->unicode generation
+- Emoji listed below are not included in this plist and ignored by the generation script. Some rely on multi-part unicode like [Regional Indicator Symbols](http://en.wikipedia.org/wiki/Regional_Indicator_Symbol), and supporting them would require a minor refactor. Others are just special :smile:
+- Emoji present in Github but not in unicode:
+   * :bowtie:
+   * :feelsgood:
+   * :finnadie:
+   * :fu:
+   * :goberserk:
+   * :godmode:
+   * :hurtrealbad:
+   * :metal:
+   * :neckbeard:
+   * :octocat:
+   * :rage1:
+   * :rage2:
+   * :rage3:
+   * :rage4:
+   * :shipit:
+   * :squirrel:
+   * :suspect:
+   * :trollface:
+- Unicode not currently supported by this script: 
+   * :cn: - 1f1e8-1f1f3
+   * :de: - 1f1e9-1f1ea
+   * :es: - 1f1ea-1f1f8
+   * :fr: - 1f1eb-1f1f7
+   * :gb: - 1f1ec-1f1e7
+   * :it: - 1f1ee-1f1f9
+   * :jp: - 1f1ef-1f1f5
+   * :kr: - 1f1f0-1f1f7
+   * :ru: - 1f1f7-1f1fa
+   * :uk: - 1f1ec-1f1e7
+   * :us: - 1f1fa-1f1f8
 
 Credits
 -------
-- `emoji.sqlite` is from the [ZWEmoji](https://github.com/zachwaugh/ZWEmoji) project and was the only direct GitHub emoji code to unicode map that I could easily find.
 - [Ben Alman](https://github.com/cowboy)'s [dotfiles](https://github.com/cowboy/dotfiles) repo provided significant inspiration for how to [merge](https://github.com/cowboy/dotfiles/blob/master/source/50_osx.sh) in the generated [NSReplacement.plist](https://github.com/cowboy/dotfiles/blob/master/conf/osx/NSUserReplacementItems.plist) file.
