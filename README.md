@@ -31,6 +31,8 @@ curl -O https://raw.github.com/gregburek/github-emoji-expansion-in-osx/master/NS
 defaults write -g WebAutomaticTextReplacementEnabled -bool true
 ```
 
+6. Logout of your user account and log back in for the changes to take effect.
+
 Develop
 -------
 The generation script has been tested on Ruby versions 1.9.2-p290 and 1.9.3-p327 and I recommend developing the project in a similar environment as unicode support in 1.8 is not best.
