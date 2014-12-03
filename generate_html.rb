@@ -4,19 +4,11 @@ require 'gemoji'
 
 def get_template()
   %{
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="utf-8">
-      </head>
-      <body>
-        <ul>
-          <% for @item in @items %>
-          <li><%= [@item['unicode'].hex].pack('U').force_encoding('utf-8')  %> - <%= @item['code'] %></li>
-          <% end %>
-        </ul>
-      </body>
-    </html>
+    <ul>
+      <% for @item in @items %>
+      <li><%= [@item['unicode'].hex].pack('U').force_encoding('utf-8')  %> - <%= @item['code'] %></li>
+      <% end %>
+    </ul>
   }
 end
 
@@ -86,4 +78,4 @@ class EmojiList
 end
 
 list = EmojiList.new(get_items, get_template)
-list.save(File.join(File.dirname(__FILE__), 'index.html'))
+list.save(File.join(File.dirname(__FILE__), 'list.html'))
