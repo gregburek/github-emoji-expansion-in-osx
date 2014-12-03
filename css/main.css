@@ -93,48 +93,6 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-.container {
- width: 1020px;
- margin: 0 auto;
-}
-
-.emoji-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.emoji-list li {
-  display: block;
-  margin: 0;
-  float: left;
-  width: 340px;
-  padding: 20px;
-  background: #f1f1f1;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -228,100 +186,130 @@ textarea {
     clear: both;
 }
 
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
 
-.clearfix {
-    *zoom: 1;
-}
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+Author's custom styles
+========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+body {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  background: #F25430;
+  text-align: center;
+  font-weight: 300;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
+h1, h2, h3, h4, h5 {
+  font-weight: 300;
+}
 
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+h1 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+main h2 {
+  border-bottom: 5px solid #E44428;
+  border-top: 5px solid #E44428;
+  padding: 1em;
+}
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+a {
+  color: #fff;
+}
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
 
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
+.container {
+  width: 1020px;
+  margin: 0 auto;
+}
 
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
+.emoji-list {
+  list-style-type: none;
+  padding: 0;
+}
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+.emoji-list li {
+  display: block;
+  margin: 0;
+  float: left;
+  width: 340px;
+  padding: 20px;
+  text-align: left;
+}
 
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
+.instructions {
+  width: 500px;
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 2em;
+  /*border-left: 1px solid #E44428;*/
+}
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+.instruction-step {
+  width: 100%;
+  border: 10px solid #E44428;
+  padding: 1em;
+}
 
-    img {
-        max-width: 100% !important;
-    }
+header {
+  background-color: #c83f32;
+  color: #fff;
+  padding: 2em 0;
+}
 
-    @page {
-        margin: 0.5cm;
-    }
+header a {
+  color: #fff;
+}
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+section {
+  padding: 2em 0;
+}
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+.bg-2 {
+  background: #E44428;
+}
+
+.bg-2 h2 {
+  border-bottom: 5px solid #F25430;
+  border-top: 5px solid #F25430;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: .75em;
+  border-radius: 2px;
+  text-decoration: none;
+  border: 1px solid #F29B30;
+  background: #F2AE30;
+  box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+  font-size: 2em;
+}
+
+.button:hover {
+  transition: background .1s;
+  background: #F29B30;
+}
+
+footer {
+  padding: 2em 0;
+  background: #E44428;
+}
+
+footer .container {
+  padding: 2em 0;
+  border-top: 1px solid #fff;
 }
