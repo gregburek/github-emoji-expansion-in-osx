@@ -7,18 +7,37 @@ def get_template()
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
     <plist version="1.0">
-    <array>
-    <% for @item in @items %>
-  <dict>
-        <key>on</key>
-        <integer>1</integer>
-        <key>replace</key>
-        <string><%= @item['code'] %></string>
-        <key>with</key>
-        <string><%= [@item['unicode'].hex].pack('U').force_encoding('utf-8')  %></string>
-      </dict>
-    <% end %>
-    </array>
+      <array>
+        <% for @item in @items %>
+        <dict>
+            <key>on</key>
+            <integer>1</integer>
+            <key>replace</key>
+            <string><%= @item['code'] %></string>
+            <key>with</key>
+            <string><%= [@item['unicode'].hex].pack('U').force_encoding('utf-8')  %></string>
+          </dict>
+        <% end %>
+      </array>
+    </plist>
+  }
+end
+
+def get_yosemite_template()
+  %{
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+      <array>
+        <% for @item in @items %>
+        <dict>
+          <key>phrase</key>
+          <string><%= [@item['unicode'].hex].pack('U').force_encoding('utf-8')  %></string>
+          <key>shortcut</key>
+          <string><%= @item['code'] %></string>
+        </dict>
+      <% end %>
+      </array>
     </plist>
   }
 end
@@ -88,5 +107,9 @@ class EmojiList
 
 end
 
+
 list = EmojiList.new(get_items, get_template)
 list.save(File.join(File.dirname(__FILE__), 'NSUserReplacementItems.plist'))
+
+yosemite_list = EmojiList.new(get_items, get_yosemite_template)
+yosemite_list.save(File.join(File.dirname(__FILE__), 'emoji.plist'))
