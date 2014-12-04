@@ -202,95 +202,26 @@ body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   padding: 0;
   margin: 0;
-  color: #fff;
-  background: #F25430;
+  color: #5a5a5a;
+  background: #faf4e4;
   text-align: center;
   font-weight: 300;
 }
 
+/* Typography */
+
 h1 {
-  text-transform: uppercase;
   font-size: 2.5em;
   font-weight: 100;
   letter-spacing: 3px;
 }
 
 main h2 {
-  border-bottom: 5px solid #E44428;
-  border-top: 5px solid #E44428;
-  padding: 1em;
+  color: #E44428;
 }
 
 a {
-  color: #fff;
-}
-
-
-.container {
-  width: 1020px;
-  margin: 0 auto;
-}
-
-.emoji-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.emoji-list li {
-  display: block;
-  margin: 0;
-  float: left;
-  width: 340px;
-  padding: 20px;
-  text-align: left;
-}
-
-.instructions {
-  width: 500px;
-  text-align: left;
-  margin: 0 auto;
-  /*border-left: 1px solid #E44428;*/
-}
-
-.instructions h3 {
-  margin-top: 2em;
-}
-
-.instruction-step {
-  width: 100%;
-  border: 10px solid #E44428;
-  padding: 1em;
-}
-
-header {
-  background-color: #c83f32;
-  color: #fff;
-  padding: 2em 0;
-}
-
-header a {
-  color: #fff;
-}
-
-section {
-  padding: 2em 0;
-}
-
-.bg-2 {
-  background: #E44428;
-}
-
-.bg-2 h2 {
-  border-bottom: 5px solid #F25430;
-  border-top: 5px solid #F25430;
-}
-
-.bg-3 {
-  background: #F2AE30;
-}
-
-.bg-3 h2 {
-  border-color: #F29B30;
+  color: #F29B30;
 }
 
 .big {
@@ -307,15 +238,93 @@ section {
   padding: .75em;
   border-radius: 2px;
   text-decoration: none;
-  border: 1px solid #F29B30;
   background: #F2AE30;
-  box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,.3);
   font-size: 2em;
+  color: #fff;
 }
 
 .button:hover {
   transition: background .1s;
   background: #F29B30;
+}
+
+/* Layout */
+
+section {
+  padding: 2em 0;
+}
+
+.container {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+hr {
+  border-color: #E44428;
+  margin: 2em 0;
+}
+
+.bg-2 {
+  background: #E44428;
+}
+
+.bg-2 h2 {
+  border-bottom: 5px solid #F25430;
+  border-top: 5px solid #F25430;
+}
+
+.bg-3 {
+  background: #F2AE30;
+  color: #fff;
+}
+
+.bg-3 h2 {
+  color: #fff;
+  padding: 0;
+}
+
+/* Sections */
+
+header {
+  background-color: #E44428;
+  color: #fff;
+  padding: 2em 0;
+}
+
+header a {
+  color: #fff;
+}
+
+.instructions {
+  width: 500px;
+  text-align: left;
+  margin: 0 auto;
+  /*border-left: 1px solid #E44428;*/
+}
+
+.instructions h3 {
+  margin-top: 2em;
+}
+
+.instruction-step {
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+}
+
+.emoji-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.emoji-list li {
+  display: block;
+  margin: 0;
+  float: left;
+  width: 340px;
+  padding: 20px;
+  text-align: left;
 }
 
 .extra-info {
@@ -341,12 +350,14 @@ section {
 footer {
   padding: 2em 0;
   background: #E44428;
+  color: #fff;
 }
 
-footer .container {
-  padding: 2em 0;
-  border-top: 1px solid #fff;
+footer a {
+  color: #fff;
 }
+
+/* Emoji replacement in chrome */
 
 img.emoji {
   height: 1em;
