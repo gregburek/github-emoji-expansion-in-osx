@@ -4,24 +4,25 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>:Emoji: Text Replacement for OS X Yosemite</title>
-        <meta name="description" content="">
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' rel='stylesheet' type='text/css'>
+        <meta name="description" content="Text Replacement shortcuts for emojis in OSX Yosemite.">
         <link rel="stylesheet" href="css/main.css">
+        <script src="https://twemoji.maxcdn.com/twemoji.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
+        <!--[if lt IE 9]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
         <header>
           <div class="container">
-            <h1>😎 :emoji: Text Replacement for Yosemite 😝</h1>
+            <h1><span class="emoji">😎</span> :emoji: Text Replacement for Yosemite <span class="emoji">😝</span></h1>
             <h2>Turn <code>:this:</code> into this: 🎉</h2>
           </div>
         </header>
         <main>
           <section>
             <div class="container">
+              <p class="big">Ever wanted to be able to use Slack or GitHub-style emoji notation (:emoji:) in other apps on your Mac, like Twitter, Messages or Safari?</p>
+              <p class="big">This is gonna be your jam.</p>
               <h2>How To Get It Done</h2>
               <div class="instructions">
                 <p>Note: I'm pretty sure this only works in Yosemite.</p>
@@ -38,10 +39,31 @@
               </div>
             </div>
           </section>
+          <section class="bg-3 clearfix">
+            <div class="container">
+              <div class="extra-info">
+                <h2>Heads up!</h2>
+                <ul>
+                  <li>
+                    <h3>Emojis not showing up?</h3>
+                    <p>Not all apps support text substitutions automatically. So if you're emojis aren't popping into existence, you might need to go make sure "Edit" > "Substitutions" > "Text Replacement" is enabled. If this menu item isn't there, you're out of luck.</p>
+                  </li>
+                  <li>
+                    <h3>iOS &amp; OSX</h3>
+                    <p>iOS and OSX now share text shortcuts! So you can actually type :thumbsup: on your iPhone or iPad and have the emoji show up. <em>However!</em> Sometimes when type a single letter or number it wants to replace it with the emoji.</p>
+                  </li>
+                  <li>
+                    <h3>Questions? Issues? Ideas?</h3>
+                    <p>Hit me up on <a href="https://twitter.com/@noahmanger">Twitter</a> or file an issue at the repo.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
           <section class="bg-2 clearfix">
             <div class="container">
               <h2>Those sweet, sweet emojis</h2>
-              <ul class="emoji-list">
+              <ul class="emoji-list" id="emojis">
                 <li>👍 - :+1:</li>
                 <li>👎 - :-1:</li>
                 <li>💯 - :100:</li>
@@ -902,9 +924,24 @@
         </section>
         <footer>
           <div class="container">
-            <p><a href="https://github.com/noahmanger/slack-style-emoji">Repo</a> | Based on <a href="https://github.com/gregburek/github-emoji-expansion-in-osx">some awesome work</a> by <a href="https://github.com/gregburek">Greg Burek</a></p>
+            <p><a href="https://github.com/noahmanger/emoji-text-replacement">Repo</a> | Based on <a href="https://github.com/gregburek/github-emoji-expansion-in-osx">some nice work</a> by <a href="https://github.com/gregburek">Greg Burek</a></p>
             <p>Made in 2014 By <a href="https://twitter.com/noahmanger">@noahmanger</a></p>
           </div>
         </footer>
+        <script>
+          var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+          if (is_chrome) {
+            twemoji.parse(document.body);
+            // var emoji = document.getElementById('emojis').children;
+            // var emoji2 = document.querySelectorAll('.emoji');
+            // console.log(emoji);
+            // for (i = 0; i <= emoji.length; i++) {
+            //   twemoji.parse(emoji[i]);
+            // }
+            // for (x = 0; x <= emoji2.length; x++) {
+            //   console.log(emoji2);
+            // }
+          }
+        </script>
     </body>
 </html>

@@ -208,10 +208,6 @@ body {
   font-weight: 300;
 }
 
-h1, h2, h3, h4, h5 {
-  font-weight: 300;
-}
-
 h1 {
   text-transform: uppercase;
   font-size: 2.5em;
@@ -253,8 +249,11 @@ a {
   width: 500px;
   text-align: left;
   margin: 0 auto;
-  padding-left: 2em;
   /*border-left: 1px solid #E44428;*/
+}
+
+.instructions h3 {
+  margin-top: 2em;
 }
 
 .instruction-step {
@@ -286,6 +285,21 @@ section {
   border-top: 5px solid #F25430;
 }
 
+.bg-3 {
+  background: #F2AE30;
+}
+
+.bg-3 h2 {
+  border-color: #F29B30;
+}
+
+.big {
+  font-size: 1.5em;
+  font-weight: 300;
+  width: 80%;
+  margin: 0 auto;
+}
+
 .button {
   display: block;
   text-align: center;
@@ -304,6 +318,26 @@ section {
   background: #F29B30;
 }
 
+.extra-info {
+  background: #F2AE30;
+}
+
+.extra-info ul {
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.extra-info li {
+  width: 280px;
+  float: left;
+  margin: 0 40px 0 0;
+  text-align: left;
+}
+
+.extra-info h3 {
+  text-align: center;
+}
+
 footer {
   padding: 2em 0;
   background: #E44428;
@@ -312,4 +346,11 @@ footer {
 footer .container {
   padding: 2em 0;
   border-top: 1px solid #fff;
+}
+
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
 }
