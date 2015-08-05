@@ -1,0 +1,289 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+
+/* ==========================================================================
+Author's custom styles
+========================================================================== */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #5a5a5a;
+  background: #f7f7f7;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+main h2 {
+  color: #E44428;
+}
+
+a {
+  color: #F29B30;
+}
+
+.big {
+  font-size: 1.5em;
+  font-weight: 300;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: .75em;
+  border-radius: 2px;
+  text-decoration: none;
+  background: #F2AE30;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.3);
+  font-size: 2em;
+  color: #fff;
+}
+
+.button:hover {
+  transition: background .1s;
+  background: #F29B30;
+}
+
+/* Layout */
+
+section {
+  padding: 2em 0;
+}
+
+.container {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+hr {
+  border-color: #E44428;
+  margin: 2em 0;
+}
+
+.bg-2 {
+  background: #E44428;
+}
+
+.bg-2 h2 {
+  border-bottom: 5px solid #F25430;
+  border-top: 5px solid #F25430;
+}
+
+.bg-3 {
+  background: #F2AE30;
+  color: #fff;
+}
+
+.bg-3 h2 {
+  color: #fff;
+  padding: 0;
+}
+
+.bg-3 a {
+  color: #fff;
+}
+
+/* Sections */
+
+header {
+  background-color: #E44428;
+  color: #fff;
+  padding: 2em 0;
+}
+
+header a {
+  color: #fff;
+}
+
+.instructions {
+  width: 500px;
+  text-align: left;
+  margin: 0 auto;
+  /*border-left: 1px solid #E44428;*/
+}
+
+.instructions h3 {
+  margin-top: 2em;
+}
+
+.instruction-step {
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+}
+
+.emoji-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.emoji-list li {
+  display: block;
+  margin: 0;
+  float: left;
+  width: 340px;
+  padding: 20px;
+  text-align: left;
+}
+
+.extra-info {
+  background: #F2AE30;
+}
+
+.extra-info ul {
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.extra-info li {
+  width: 280px;
+  float: left;
+  margin: 0 40px 0 0;
+  text-align: left;
+}
+
+.extra-info h3 {
+  text-align: center;
+}
+
+footer {
+  padding: 2em 0;
+  background: #E44428;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+/* Emoji replacement in chrome */
+
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
+}
